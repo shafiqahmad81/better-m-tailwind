@@ -9,35 +9,38 @@
     <link rel="stylesheet" href="../public/output.css">
   </head>
 
-  <body class="bg-background-ing bg-center bg-cover bg-no-repeat overflow-x-hidden">
-    <main class="md:h-screen flex justify-center items-center p-10">
-      <div class="md:h-full md:flex flex-wrap justify-center items-center ">
+  <body class="min-w-[320px] font-campton bg-background-ing bg-center bg-cover bg-no-repeat md:py-14">
+    <main class="min-h-screen flex justify-center items-center p-4 md:p-10 ">
+      <div class=" overflow-hidden lg:max-w-1160 md:flex mx-auto flex-wrap justify-center rounded-3xl md:rounded-6xl">
         <!-- Beginning greetings section -->
-        <div class="bg-[#084B3E;] md:h-full flex flex-col justify-between md:w-left">
+        <div class=" bg-[#084B3E;] p-4 sm:p-8 md:p-10 flex flex-col justify-between md:w-left">
           <div>
             <img src="../assets/img/better.png" alt="Logo">
           </div>
-          <h2>Say hello to global food and beverage producers and suppliers, all in one place</h2>
+          <h2 class="text-yellow text-2.9xl mt-20 leading-45">Say hello to global food and beverage producers and suppliers, all in one place</h2>
         </div>
         <!-- end greetings section -->
         <!-- Beginning form area -->
-        <div class="bg-[#ffffff;] md:h-full flex flex-col md:w-right">
-          <h1>Let's get started <br> with a few simple steps</h1>
-          <form method="post">
-            <label class="" for="email">
+        <div class="bg-[#ffffff;] p-4 sm:p-8 md:p-10 flex flex-col md:w-right md:min-h-calc">
+          <h1 class="text-34 text-black leading-42 font-medium tracking-0.5">Let's get started <br> with a few simple steps</h1>
+          <form method="post" class="mt-20 mb-20 flex flex-col flex-grow w-450 max-w-full">
+            <label class="after:content-['*'] after:ml-0.5 after:text-red-500 text-gray font-medium text-base">
               Email
             </label>
-            <input class="border border-zinc-300 border-solid rounded-xl py-1 px-2.5" name="email" id="email" type="email" placeholder="email">
-            <label class="" for="name">
+            <input class="mb-5 border-gray border-solid border border-t-0 border-l-0 border-r-0 outline-0 py-1 px-2.5" name="email" id="email" type="email">
+            <label class="after:content-['*'] after:ml-0.5 after:text-red-500 text-gray font-medium text-base">
               Full name
             </label>
-            <input class="border border-zinc-300 border-solid rounded-xl py-1 px-2.5" id="name" name="name" type="text" placeholder="name">
-            <label class="" for="password">
+            <input class="mb-5 border-gray border-solid border border-t-0 border-l-0 border-r-0 outline-0 py-1 px-2.5" id="name" name="name" type="text">
+            <label class="after:content-['*'] after:ml-0.5 after:text-red-500 text-gray font-medium text-base">
               Password
             </label>
-            <input class="border border-zinc-300 border-solid rounded-xl py-1 px-2.5" name="password" id="password" type="password">
-            <button class="d-flex align-center justify-center" type="submit">Sign up</button>
+            <input class="mb-5 border-gray border-solid border border-t-0 border-l-0 border-r-0 outline-0 py-1 px-2.5" name="password" id="password" type="password">
+            <button class="bg-green mt-5 p-3 md:p-5 rounded-20 text-xl leading-6 text-white" type="submit">Sign up</button>
           </form>
+          <div class="text-gray-light text-sm font-semibold w-310">
+            <p>By signing up, you agree to our <a class="underline" href="#">Terms of Service.</a> Already have an account? <a href="#" class="underline text-green">Log in</a></p>
+          </div>
         </div>
         <!-- end form area -->
       </div>

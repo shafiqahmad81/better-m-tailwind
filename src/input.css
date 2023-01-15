@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+@font-face {
+  font-family: 'Campton';
+  src: url('../assets/font/Campton-Medium.eot');
+  src: url('../assets/font/Campton-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/font/Campton-Medium.woff2') format('woff2'),
+    url('../assets/font/Campton-Medium.woff') format('woff'),
+    url('../assets/font/Campton-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* @layer base {} */

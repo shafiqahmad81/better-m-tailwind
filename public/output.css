@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -513,8 +513,49 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
+}
+
+.w-450 {
+  width: 450px;
+}
+
+.w-310 {
+  width: 330px;
+}
+
+.min-w-\[320px\] {
+  min-width: 320px;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .flex-col {
@@ -537,25 +578,41 @@ video {
   justify-content: space-between;
 }
 
-.overflow-x-hidden {
-  overflow-x: hidden;
+.overflow-hidden {
+  overflow: hidden;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-20 {
+  border-radius: 20px;
 }
 
 .border {
   border-width: 1px;
 }
 
+.border-t-0 {
+  border-top-width: 0px;
+}
+
+.border-l-0 {
+  border-left-width: 0px;
+}
+
+.border-r-0 {
+  border-right-width: 0px;
+}
+
 .border-solid {
   border-style: solid;
 }
 
-.border-zinc-300 {
+.border-gray {
   --tw-border-opacity: 1;
-  border-color: rgb(212 212 216 / var(--tw-border-opacity));
+  border-color: rgb(52 52 52 / var(--tw-border-opacity));
 }
 
 .bg-\[\#084B3E\;\] {
@@ -564,6 +621,11 @@ video {
 
 .bg-\[\#ffffff\;\] {
   background-color: #ffffff;;
+}
+
+.bg-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 195 139 / var(--tw-bg-opacity));
 }
 
 .bg-background-ing {
@@ -582,8 +644,12 @@ video {
   background-repeat: no-repeat;
 }
 
-.p-10 {
-  padding: 2.5rem;
+.p-4 {
+  padding: 1rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .py-1 {
@@ -601,21 +667,148 @@ video {
   padding-right: 0.5rem;
 }
 
+.font-campton {
+  font-family: campton, Poppins, sans-serif;
+}
+
+.text-2\.9xl {
+  font-size: 39px;
+}
+
+.text-34 {
+  font-size: 34px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.leading-45 {
+  line-height: 45px;
+}
+
+.leading-42 {
+  line-height: 42px;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.tracking-0\.5 {
+  letter-spacing: 0.5px;
+}
+
+.text-yellow {
+  --tw-text-opacity: 1;
+  color: rgb(249 226 186 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(35 35 35 / var(--tw-text-opacity));
+}
+
+.text-gray {
+  --tw-text-opacity: 1;
+  color: rgb(52 52 52 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-light {
+  --tw-text-opacity: 1;
+  color: rgb(189 189 189 / var(--tw-text-opacity));
+}
+
+.text-green {
+  --tw-text-opacity: 1;
+  color: rgb(0 195 139 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.outline-0 {
+  outline-width: 0px;
+}
+
+@font-face {
+  font-family: 'Campton';
+
+  src: url('../assets/font/Campton-Medium.eot');
+
+  src: url('../assets/font/Campton-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/font/Campton-Medium.woff2') format('woff2'),
+    url('../assets/font/Campton-Medium.woff') format('woff'),
+    url('../assets/font/Campton-Medium.ttf') format('truetype');
+
+  font-weight: 500;
+
+  font-style: normal;
+
+  font-display: swap;
+}
+
+/* @layer base {} */
+
+.after\:ml-0\.5::after {
+  content: var(--tw-content);
+  margin-left: 0.125rem;
+}
+
+.after\:ml-0::after {
+  content: var(--tw-content);
+  margin-left: 0px;
+}
+
+.after\:text-red-500::after {
+  content: var(--tw-content);
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.after\:content-\[\'\*\'\]::after {
+  --tw-content: '*';
+  content: var(--tw-content);
+}
+
+@media (min-width: 640px) {
+  .sm\:p-8 {
+    padding: 2rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
   }
 
-  .md\:h-full {
-    height: 100%;
-  }
-
-  .md\:h-screen {
-    height: 100vh;
-  }
-
-  .md\:min-h-screen {
-    min-height: 100vh;
+  .md\:min-h-calc {
+    min-height: calc(100vh - 300px);
   }
 
   .md\:w-left {
@@ -624,5 +817,28 @@ video {
 
   .md\:w-right {
     width: calc(100% - 43.793%);
+  }
+
+  .md\:rounded-6xl {
+    border-radius: 50px;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .md\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:max-w-1160 {
+    max-width: 1160px;
   }
 }
