@@ -4,7 +4,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     minHeight: {
-      'calc': 'calc(100vh - 300px)'
+      'calc': 'calc(100vh - 200px)'
     },
     letterSpacing: {
       0.5: '0.5px',
