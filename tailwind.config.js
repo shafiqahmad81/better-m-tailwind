@@ -50,6 +50,9 @@ module.exports = {
         '42': '42px',
         '45': '45px',
       },
+      padding: {
+        '55': '55px',
+      }
     },
   },
   plugins: [

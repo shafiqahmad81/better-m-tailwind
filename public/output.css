@@ -526,12 +526,20 @@ video {
   margin-bottom: 2rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .flex {
@@ -652,6 +660,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-55 {
+  padding: 55px;
+}
+
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -670,6 +682,11 @@ video {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .font-campton {
@@ -808,6 +825,18 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:m-0 {
+    margin: 0px;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -834,6 +863,10 @@ video {
 
   .md\:p-5 {
     padding: 1.25rem;
+  }
+
+  .md\:p-55 {
+    padding: 55px;
   }
 
   .md\:py-14 {
